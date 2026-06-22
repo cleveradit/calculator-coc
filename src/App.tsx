@@ -321,6 +321,21 @@ export default function App() {
           </div>
         )}
 
+        {/* Watermark — floating badge */}
+        <div style={{
+          position:'fixed', right:12, bottom:12, zIndex:50,
+          display:'flex', alignItems:'center', gap:6,
+          background:'rgba(12,20,34,.72)', backdropFilter:'blur(6px)',
+          WebkitBackdropFilter:'blur(6px)',
+          border:`1px solid ${C.border}`, borderRadius:999,
+          padding:'6px 12px', fontSize:11, color:C.muted,
+          boxShadow:'0 4px 14px rgba(0,0,0,.4)', pointerEvents:'none',
+          fontVariantNumeric:'tabular-nums'
+        }}>
+          <span style={{ fontSize:13, lineHeight:1 }}>⚒️</span>
+          <span>Made by <span style={{ color:C.accentLt, fontWeight:700 }}>Developer Patah Semangat</span> © 2026</span>
+        </div>
+
         {/* EQ note */}
         {eqOn && (
           <div style={{ marginTop:10, background:C.card, border:`1px solid ${C.border}`, borderRadius:10, padding:'10px 13px' }}>
