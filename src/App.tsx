@@ -333,7 +333,7 @@ export default function App() {
           fontVariantNumeric:'tabular-nums'
         }}>
           <span style={{ fontSize:13, lineHeight:1 }}>⚒️</span>
-          <span>Made by <span style={{ color:C.accentLt, fontWeight:700 }}>RadLabs</span> © 2026</span>
+          <span>Made by <span style={{ color:C.accentLt, fontWeight:700 }}>radlabs</span> © 2026</span>
         </div>
 
         {/* EQ note */}
